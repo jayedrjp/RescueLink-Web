@@ -1,54 +1,58 @@
-# RescueLink ওয়েবসাইট
+RescueLink Website
+A Bengali-language landing website introducing the RescueLink mobile app.
 
-RescueLink মোবাইল অ্যাপের পরিচিতির জন্য একটি বাংলা ভাষার ল্যান্ডিং ওয়েবসাইট।
-শুধু HTML5, CSS3 ও vanilla JavaScript — কোনো বিল্ড টুল বা লাইব্রেরি লাগে না।
+Built using only HTML5, CSS3, and vanilla JavaScript — no build tools or libraries required.
 
-## ফাইল কাঠামো
-
-```
+File Structure
+text
 RescueLink/
-├── index.html        পুরো পেজের কাঠামো (সব লেখা বাংলায়)
-├── style.css         সব স্টাইল, রেসপনসিভ নিয়ম ও অ্যানিমেশন
-├── script.js         মোবাইল মেনু, সক্রিয় লিংক, স্ক্রল রিভিল, গ্যালারি
+├── index.html        Entire page structure (all text in Bengali)
+├── style.css         All styles, responsive rules, and animations
+├── script.js         Mobile menu, active links, scroll reveal, gallery
 ├── assets/
 │   ├── images/
-│   │   ├── logo.png          নেভবার ও ফুটারের লোগো (শিল্ড চিহ্ন, স্বচ্ছ ব্যাকগ্রাউন্ড)
-│   │   ├── logo-full.png     পূর্ণ লোগো (শেয়ার প্রিভিউয়ে ব্যবহৃত)
-│   │   ├── favicon.png       ফেভিকন
-│   │   ├── hero-app.png      হিরো সেকশনের ফোনের স্ক্রিন
-│   │   ├── app-home.png      হোম স্ক্রিন
-│   │   ├── app-sos.png       জরুরি SOS স্ক্রিন
-│   │   ├── app-map.png       মানচিত্র ও অবস্থান
-│   │   ├── app-shelters.png  কাছাকাছি আশ্রয়কেন্দ্র
-│   │   ├── app-services.png  জরুরি সেবার তথ্য
-│   │   └── app-profile.png   প্রোফাইল ও সেটিংস
-│   └── icons/                (ফাঁকা; আইকনগুলো index.html-এ ইনলাইন SVG হিসেবে আছে)
+│   │   ├── logo.png          Navbar and footer logo (shield symbol, transparent background)
+│   │   ├── logo-full.png     Full logo (used for social sharing previews)
+│   │   ├── favicon.png       Favicon
+│   │   ├── hero-app.png      Phone screen in the hero section
+│   │   ├── app-home.png      Home screen
+│   │   ├── app-sos.png       Emergency SOS screen
+│   │   ├── app-map.png       Map and location
+│   │   ├── app-shelters.png  Nearby shelters
+│   │   ├── app-services.png  Emergency services information
+│   │   └── app-profile.png   Profile and settings
+│   └── icons/                Empty; icons are embedded as inline SVGs in index.html
 └── README.md
-```
+How to Run
+Open the index.html file in any modern web browser. No build process or server is required.
 
-## চালানোর নিয়ম
+The Hind Siliguri font is loaded from Google Fonts, so an internet connection is required to display the font.
 
-`index.html` ফাইলটি যেকোনো আধুনিক ব্রাউজারে খুলুন। কোনো বিল্ড বা সার্ভার লাগবে না।
-Hind Siliguri ফন্ট Google Fonts থেকে লোড হয়, তাই ফন্ট দেখতে ইন্টারনেট সংযোগ দরকার।
+How to Replace the Sample App Screenshots
+The app-*.png and hero-app.png files in assets/images/ currently contain sample screens, not actual app screenshots.
 
-## আসল অ্যাপ স্ক্রিনশট বসানোর নিয়ম
+If actual screenshots are available, replace the existing files with the new ones using the same filenames — no code changes will be necessary.
 
-`assets/images/`-এর `app-*.png` ও `hero-app.png` বর্তমানে **নমুনা স্ক্রিন**, আসল অ্যাপের স্ক্রিনশট নয়।
-আসল স্ক্রিনশট থাকলে একই নামে ফাইলগুলো বদলে দিন — কোড বদলাতে হবে না।
+Maintain an aspect ratio of approximately 9:19.2 for the images (for example, 1242 × 2656 pixels). The phone frame will be added automatically, so do not include a frame in the screenshots.
 
-- ছবির অনুপাত রাখুন প্রায় ৯ : ১৯.২ (যেমন ১২৪২ × ২৬৫৬ পিক্সেল)। ফোনের ফ্রেম নিজে থেকে বসে যাবে, স্ক্রিনশটে ফ্রেম যোগ করবেন না।
-- `hero-app.png` সাধারণত `app-home.png`-এর কপি।
-- নমুনা-সংক্রান্ত লেখাটি (`এখানে দেখানো স্ক্রিনগুলো নমুনা প্রদর্শনী…`) আসল স্ক্রিনশট বসানোর পর `index.html`-এর অ্যাপের ঝলক সেকশন থেকে সরিয়ে দিন।
-- প্রতিটি ছবির বিবরণ (alt) `index.html`-এর `data-alt` অ্যাট্রিবিউটে আছে; ছবি বদলালে বিবরণও মিলিয়ে নিন।
+hero-app.png is generally a copy of app-home.png.
 
-## লোগো
+After replacing the sample screens with actual screenshots, remove the sample-related notice (The screens shown here are sample previews…) from the app showcase section in index.html.
 
-`logo.png` ও `logo-full.png` প্রকল্পের দেওয়া লোগো থেকে তৈরি। SVG সংস্করণ থাকলে `assets/images/logo.svg` হিসেবে রেখে `index.html`-এ `logo.png` পথগুলো বদলে নিন।
+The description for each image (alt text) is specified in the data-alt attribute in index.html. Update the descriptions to match the replacement images.
 
-## যোগাযোগের তথ্য
+Logo
+logo.png and logo-full.png were created from the logo provided with the project.
 
-যোগাযোগ সেকশন ও ফুটারে একটি ইমেইল ঠিকানা আছে (`index.html`-এ `mailto:` লিংক)। প্রকাশের আগে ঠিকানাটি যাচাই করুন বা বদলে নিন।
+If an SVG version is available, save it as assets/images/logo.svg and update the paths to logo.png in index.html accordingly.
 
-## ফিচার ও দাবি
+Contact Information
+An email address is included in the contact section and footer through a mailto: link in index.html.
 
-ফিচারের বিবরণ অ্যাপের পরিকল্পিত সুবিধা অনুযায়ী লেখা। কোনো ফিচার এখনো তৈরি না হয়ে থাকলে সংশ্লিষ্ট কার্ড ও স্ক্রিন সম্পাদনা করুন। ওয়েবসাইটটি কোনো জরুরি সংকেত পাঠায় না, অবস্থান চায় না এবং কর্তৃপক্ষের কাছে সংকেত পৌঁছানোর কোনো দাবি করে না।
+Verify or update the email address before publishing the website.
+
+Features and Claims
+Feature descriptions are based on the planned capabilities of the app. If any feature has not yet been implemented, edit the corresponding cards and screens accordingly.
+
+The website does not send emergency alerts, request location access, or claim to transmit alerts to the authorities.
+

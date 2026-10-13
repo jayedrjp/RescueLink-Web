@@ -23,6 +23,7 @@ RescueLink/
 │   │   └── app-profile.png   Profile and settings
 │   └── icons/                Empty; icons are embedded as inline SVGs in index.html
 └── README.md
+
 How to Run
 Open the index.html file in any modern web browser. No build process or server is required.
 

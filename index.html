@@ -27,8 +27,7 @@
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="RescueLink — হোমে যান">
-        <img src="assets/images/logo.png" alt="" width="30" height="33">
-        <span>Rescue<b>Link</b></span>
+        <img src="assets/images/logo-full.png" alt="RescueLink" width="74" height="60">
       </a>
       <button class="menu-toggle" id="menu-toggle" type="button" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="primary-nav">
         <span class="menu-bars" aria-hidden="true"></span>
@@ -36,12 +35,18 @@
       <nav class="primary-nav" id="primary-nav" aria-label="প্রধান মেনু">
         <ul>
           <li><a class="nav-link" href="#home">হোম</a></li>
-          <li><a class="nav-link" href="#about">পরিচিতি</a></li>
+          <li><a class="nav-link" href="#app-preview">অ্যাপের ঝলক</a></li>
+          <li><a class="nav-link" href="#how-it-works">যেভাবে কাজ করে</a></li>
           <li><a class="nav-link" href="#features">ফিচারসমূহ</a></li>
-          <li><a class="nav-link" href="#how">যেভাবে কাজ করে</a></li>
-          <li><a class="nav-link" href="#preview">অ্যাপের ঝলক</a></li>
+          <li><a class="nav-link" href="#about">পরিচিতি</a></li>
           <li><a class="nav-link" href="#contact">যোগাযোগ</a></li>
-          <li><a class="btn btn-primary btn-sm" href="#preview">অ্যাপটি দেখুন</a></li>
+          <li class="lang-item">
+            <div class="lang-toggle" role="group" aria-label="ভাষা বাছাই করুন" data-no-i18n-text>
+              <button type="button" class="lang-btn is-active" data-lang="bn" lang="bn" aria-pressed="true">BN</button>
+              <span class="lang-sep" aria-hidden="true">|</span>
+              <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">EN</button>
+            </div>
+          </li>
         </ul>
       </nav>
     </div>
@@ -49,141 +54,29 @@
 
   <main id="main">
 
-    <!-- ===== হিরো ===== -->
+    <!-- ===== ১. হিরো (Hero) ===== -->
     <section class="hero" id="home" aria-labelledby="hero-title">
       <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
         <source src="assets/video/hero-video.mp4" type="video/mp4">
       </video>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1 id="hero-title" class="hero-in">দুর্যোগের সময়, <br>
-সাহায্য হোক সহজ</h1>
+        <h1 id="hero-title" class="hero-in">
+          দুর্যোগের সময়, <span style="color: var(--red, red);">সাহায্য</span> হোক সহজ
+        </h1>
         <p class="lead hero-in delay-1">বন্যা, ঘূর্ণিঝড় বা যেকোনো দুর্যোগে কাছাকাছি নিরাপদ আশ্রয়, জরুরি সেবা এবং প্রয়োজনীয় সহায়তা খুঁজে নিন এক প্ল্যাটফর্মে।</p>
         <div class="btn-row hero-in delay-2">
-          <a class="btn btn-primary" href="#features">ফিচারসমূহ দেখুন</a>
-          <a class="btn btn-ghost" href="#how">যেভাবে কাজ করে</a>
-        </div>
-        
-      </div>
-    </section>
-
-    <!-- ===== পরিচিতি ===== -->
-    <section class="section section-alt" id="about" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div class="about-copy">
-          <h2 id="about-title" class="reveal">RescueLink সম্পর্কে জানুন</h2>
-          <p class="about-lead reveal">RescueLink একটি মোবাইল অ্যাপ, যা বিপদের সময় জরুরি সহায়তা পেতে এবং আশপাশের নিরাপত্তা-সুবিধা খুঁজে নিতে সাহায্য করে।</p>
-          <p class="reveal">জরুরি পরিস্থিতিতে সঠিক নম্বর, কাছের আশ্রয়কেন্দ্র বা নিজের অবস্থান জানানোর উপায় খুঁজতে গিয়ে মূল্যবান সময় নষ্ট হয়। RescueLink এই সুবিধাগুলো এক অ্যাপে একসঙ্গে রাখে।</p>
-
-          <dl class="facts reveal">
-            <div class="fact">
-              <dt>সমস্যাটা কী</dt>
-              <dd>জরুরি যোগাযোগ, আশ্রয়কেন্দ্র ও অবস্থানের তথ্য আলাদা আলাদা জায়গায় ছড়িয়ে থাকে।</dd>
-            </div>
-            <div class="fact">
-              <dt>কেন গুরুত্বপূর্ণ</dt>
-              <dd>সহজে পাওয়া তথ্য বিপদের সময় শান্ত থেকে দ্রুত সিদ্ধান্ত নিতে সাহায্য করে।</dd>
-            </div>
-            <div class="fact">
-              <dt>কীভাবে সাহায্য করে</dt>
-              <dd>অবস্থান শেয়ার, কাছের আশ্রয়কেন্দ্র ও জরুরি সেবার তথ্য — সবই এক অ্যাপে।</dd>
-            </div>
-          </dl>
-
-          <p class="notice reveal">RescueLink জরুরি সহায়তা পেতে সহায়ক একটি অ্যাপ; এটি সরকারি জরুরি সেবার বিকল্প নয়।</p>
-        </div>
-
-        <div class="about-visual reveal reveal-scale">
-          <div class="phone">
-            <img src="assets/images/app-map.png" width="246" height="526" alt="RescueLink অ্যাপের মানচিত্র স্ক্রিন, যেখানে ব্যবহারকারীর অবস্থান ও কাছাকাছি আশ্রয়কেন্দ্র চিহ্নিত" loading="lazy" decoding="async">
-          </div>
+          <a class="btn btn-primary" href="#app-preview">RescueLink ঘুরে দেখুন</a>
+          <a class="btn btn-ghost" href="#how-it-works">যেভাবে কাজ করে</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== ফিচারসমূহ ===== -->
-    <section class="section" id="features" aria-labelledby="features-title">
+    <!-- ===== ২. এক নজরে RescueLink (App Preview / Showcase) ===== -->
+    <section class="section" id="app-preview" aria-labelledby="app-preview-title">
       <div class="container">
         <div class="section-head">
-          <h2 id="features-title" class="reveal">আপনার নিরাপত্তায় প্রয়োজনীয় সুবিধা</h2>
-          <p class="reveal">জরুরি পরিস্থিতিতে প্রয়োজনীয় তথ্য ও নিরাপত্তাসংক্রান্ত সুবিধা সহজে খুঁজে পেতে RescueLink-এর ফিচারগুলো ব্যবহার করুন।</p>
-        </div>
-
-        <div class="feature-grid" data-stagger>
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
-            <h3>জরুরি SOS সংকেত</h3>
-            <p>হোম স্ক্রিনের SOS বোতাম থেকে দ্রুত জরুরি সংকেত শুরু করা যায়।</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-            <h3>সরাসরি অবস্থান শেয়ার</h3>
-            <p>বিপদের সময় নিজের বর্তমান অবস্থান শেয়ার করা যায়।</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>
-            <h3>কাছাকাছি নিরাপদ আশ্রয়</h3>
-            <p>আশপাশের আশ্রয়কেন্দ্রের তালিকা ও অবস্থান দেখা যায়।</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-            <h3>জরুরি সেবার তথ্য</h3>
-            <p>পুলিশ, ফায়ার সার্ভিসসহ প্রয়োজনীয় জরুরি সেবার যোগাযোগের তথ্য এক জায়গায়।</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg></span>
-            <h3>মানচিত্র ও অবস্থান</h3>
-            <p>মানচিত্রে নিজের অবস্থান ও আশপাশের গুরুত্বপূর্ণ স্থান দেখা যায়।</p>
-          </article>
-          <article class="feature-card reveal">
-            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
-            <h3>প্রোফাইল ও সেটিংস</h3>
-            <p>ব্যক্তিগত তথ্য, জরুরি যোগাযোগ ও অবস্থানের অনুমতি নিজের নিয়ন্ত্রণে রাখুন।</p>
-          </article>
-        </div>
-        <p class="footnote reveal">এখানে বর্ণিত ফিচারগুলো অ্যাপের পরিকল্পিত সুবিধা।</p>
-      </div>
-    </section>
-
-    <!-- ===== যেভাবে কাজ করে ===== -->
-    <section class="section section-alt" id="how" aria-labelledby="how-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="how-title" class="reveal">যেভাবে কাজ করে</h2>
-          <p class="reveal">সহজ কয়েকটি ধাপে RescueLink-এর উপলভ্য সুবিধাগুলো ব্যবহার করুন।</p>
-        </div>
-
-        <ol class="steps" data-stagger>
-          <li class="step reveal">
-            <span class="step-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></span>
-            <h3><span class="step-no">ধাপ ১</span>অ্যাপটি খুলুন</h3>
-            <p>মোবাইল অ্যাপ থেকে উপলভ্য জরুরি ও নিরাপত্তাসংক্রান্ত সুবিধাগুলো দেখুন।</p>
-          </li>
-          <li class="step reveal">
-            <span class="step-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></span>
-            <h3><span class="step-no">ধাপ ২</span>প্রয়োজনীয় সুবিধা বেছে নিন</h3>
-            <p>আপনার পরিস্থিতি অনুযায়ী উপযুক্ত ফিচার নির্বাচন করুন।</p>
-          </li>
-          <li class="step reveal">
-            <span class="step-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
-            <h3><span class="step-no">ধাপ ৩</span>অবস্থান বা জরুরি তথ্য দেখুন</h3>
-            <p>অ্যাপের উপলভ্য সুবিধা অনুযায়ী অবস্থান শেয়ার করুন অথবা কাছাকাছি নিরাপত্তাসংক্রান্ত তথ্য খুঁজুন।</p>
-          </li>
-          <li class="step reveal">
-            <span class="step-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
-            <h3><span class="step-no">ধাপ ৪</span>প্রয়োজনীয় তথ্য ব্যবহার করুন</h3>
-            <p>উপলভ্য আশ্রয়কেন্দ্র, জরুরি সেবার যোগাযোগের তথ্য অথবা অন্যান্য প্রাসঙ্গিক রিসোর্স দেখুন।</p>
-          </li>
-        </ol>
-        <p class="footnote reveal">RescueLink তথ্য খুঁজে পেতে ও শেয়ার করতে সহায়তা করে। অ্যাপটি স্বয়ংক্রিয়ভাবে উদ্ধারকারী দল বা কর্তৃপক্ষের কাছে সংকেত পাঠায় — এমন কোনো দাবি করা হচ্ছে না।</p>
-      </div>
-    </section>
-
-    <!-- ===== অ্যাপের ঝলক ===== -->
-    <section class="section" id="preview" aria-labelledby="preview-title">
-      <div class="container">
-        <div class="section-head">
-          <h2 id="preview-title" class="reveal">এক নজরে RescueLink</h2>
+          <h2 id="app-preview-title" class="reveal">এক নজরে RescueLink</h2>
           <p class="reveal">দেখে নিন RescueLink মোবাইল অ্যাপের বিভিন্ন স্ক্রিন ও ব্যবহারকারীর অভিজ্ঞতা।</p>
         </div>
 
@@ -210,9 +103,9 @@
           </div>
 
           <div class="gallery-stage">
-            <div class="phone phone-ghost" aria-hidden="true"><img id="gallery-prev" src="" width="246" height="526" alt="" decoding="async"></div>
+            <div class="phone phone-ghost" aria-label="আগের স্ক্রিন" title="আগের স্ক্রিন"><img id="gallery-prev" src="assets/images/app-profile.png" width="246" height="526" alt="" decoding="async"></div>
             <div class="phone phone-current" role="tabpanel" aria-live="polite"><img id="gallery-current" src="assets/images/app-home.png" width="246" height="526" alt="হোম স্ক্রিন" decoding="async"></div>
-            <div class="phone phone-ghost" aria-hidden="true"><img id="gallery-next" src="" width="246" height="526" alt="" decoding="async"></div>
+            <div class="phone phone-ghost" aria-label="পরের স্ক্রিন" title="পরের স্ক্রিন"><img id="gallery-next" src="assets/images/app-sos.png" width="246" height="526" alt="" decoding="async"></div>
             <div class="gallery-controls">
               <button type="button" id="gallery-prev-btn" aria-label="আগের স্ক্রিন"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
               <span class="gallery-count" id="gallery-count" aria-live="polite">১ / ৬</span>
@@ -220,26 +113,260 @@
             </div>
           </div>
         </div>
-        <p class="footnote center reveal">এখানে দেখানো স্ক্রিনগুলো নমুনা প্রদর্শনী; নাম, দূরত্ব ও যোগাযোগের তথ্য উদাহরণমাত্র।</p>
       </div>
     </section>
 
-    <!-- ===== যোগাযোগ ===== -->
-    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+    <!-- ===== ৩. কীভাবে RescueLink আপনাকে সাহায্য করে (How RescueLink Helps) ===== -->
+    <section class="section section-alt" id="how-it-works" aria-labelledby="how-it-works-title">
       <div class="container">
-        <div class="contact-box reveal">
-          <div>
-            <h2 id="contact-title">আমাদের সঙ্গে যোগাযোগ করুন</h2>
-            <p>RescueLink সম্পর্কে জানতে বা আপনার মতামত জানাতে আমাদের সঙ্গে যোগাযোগ করুন।</p>
-          </div>
-          <div class="contact-card">
-            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
-            <div>
-              <span class="contact-label">ইমেইল</span>
-              <a class="contact-value" href="mailto:jayedrjp@gmail.com">jayedrjp@gmail.com</a>
+        <div class="section-head">
+          <h2 id="how-it-works-title" class="reveal">কীভাবে RescueLink আপনাকে সাহায্য করে</h2>
+          <p class="reveal">সাহায্য চাওয়া থেকে সহায়তা পাওয়া পর্যন্ত পুরো পথটি এক জায়গায়।</p>
+        </div>
+
+        <ol class="help-steps" data-stagger>
+          <li class="help-step reveal">
+            <div class="help-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120">
+                <circle cx="100" cy="60" r="46" class="art-ring"/>
+                <circle cx="100" cy="60" r="34" class="art-ring art-ring-2"/>
+                <rect x="78" y="14" width="44" height="92" rx="10" class="art-body"/>
+                <rect x="92" y="20" width="16" height="4" rx="2" class="art-soft"/>
+                <circle cx="100" cy="60" r="15" class="art-red"/>
+                <text x="100" y="64" text-anchor="middle" class="art-text">SOS</text>
+                <rect x="88" y="88" width="24" height="5" rx="2.5" class="art-soft"/>
+              </svg>
             </div>
-            <a class="btn btn-primary btn-sm" href="mailto:jayedrjp@gmail.com">ইমেইল পাঠান</a>
+            <span class="help-no">ধাপ ১</span>
+            <h3>সাহায্যের অনুরোধ করুন</h3>
+            <p>SOS পাঠান বা প্রয়োজনীয় সহায়তার অনুরোধ জমা দিন।</p>
+          </li>
+
+          <li class="help-step reveal">
+            <div class="help-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120">
+                <path d="M50 60 L150 34 M50 60 L150 86" class="art-line"/>
+                <circle cx="50" cy="60" r="22" class="art-ring"/>
+                <circle cx="50" cy="60" r="11" class="art-red"/>
+                <circle cx="50" cy="60" r="4" class="art-white"/>
+                <circle cx="150" cy="34" r="11" class="art-navy"/>
+                <circle cx="150" cy="34" r="4" class="art-white"/>
+                <circle cx="150" cy="86" r="11" class="art-navy"/>
+                <circle cx="150" cy="86" r="4" class="art-white"/>
+                <circle cx="100" cy="47" r="3" class="art-dot"/>
+                <circle cx="100" cy="73" r="3" class="art-dot"/>
+              </svg>
+            </div>
+            <span class="help-no">ধাপ ২</span>
+            <h3>স্বেচ্ছাসেবীদের সঙ্গে যুক্ত হোন</h3>
+            <p>কাছাকাছি স্বেচ্ছাসেবীরা আপনার প্রয়োজন অনুযায়ী পাশে দাঁড়াতে পারবেন।</p>
+          </li>
+
+          <li class="help-step reveal">
+            <div class="help-art" aria-hidden="true">
+              <svg viewBox="0 0 200 120">
+                <rect x="40" y="16" width="120" height="88" rx="14" class="art-body"/>
+                <circle cx="66" cy="40" r="9" class="art-green"/>
+                <path d="m61.5 40 3.2 3.2 6-6.4" class="art-check"/>
+                <rect x="86" y="35" width="56" height="5" rx="2.5" class="art-soft"/>
+                <rect x="86" y="44" width="34" height="4" rx="2" class="art-soft art-soft-2"/>
+                <circle cx="66" cy="68" r="9" class="art-red"/>
+                <circle cx="66" cy="68" r="3" class="art-white"/>
+                <rect x="86" y="63" width="48" height="5" rx="2.5" class="art-soft"/>
+                <rect x="86" y="72" width="28" height="4" rx="2" class="art-soft art-soft-2"/>
+                <rect x="56" y="88" width="88" height="6" rx="3" class="art-track"/>
+                <rect x="56" y="88" width="56" height="6" rx="3" class="art-red"/>
+              </svg>
+            </div>
+            <span class="help-no">ধাপ ৩</span>
+            <h3>প্রয়োজনীয় সহায়তা পান</h3>
+            <p>অনুরোধের অগ্রগতি দেখুন এবং উপলভ্য সহায়তা গ্রহণ করুন।</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== ৪. ফিচারসমূহ (Features) ===== -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="features-title" class="reveal">ফিচারসমূহ</h2>
+          <p class="reveal">জরুরি পরিস্থিতিতে নিরাপত্তা ও সুরক্ষার জন্য প্রয়োজনীয় সুবিধাসমূহ।</p>
+        </div>
+
+        <div class="feature-grid" data-stagger>
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </span>
+            <h3>জরুরি SOS</h3>
+            <p>দ্রুত জরুরি সংকেত পাঠিয়ে কাছাকাছি সহায়তা চাওয়ার সহজ ব্যবস্থা।</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <h3>মানচিত্র ও অবস্থান</h3>
+            <p>নিজের বর্তমান অবস্থান পর্যবেক্ষণ ও আশপাশের নিরাপত্তা কেন্দ্র শনাক্তকরণ।</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </span>
+            <h3>কাছাকাছি আশ্রয়কেন্দ্র</h3>
+            <p>দুর্যোগ পরিস্থিতিতে নিকটবর্তী নিরাপদ আশ্রয়স্থলের তালিকা ও দূরত্ব সংক্রান্ত তথ্য।</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <h3>জরুরি সেবার তথ্য</h3>
+            <p>পুলিশ, ফায়ার সার্ভিস, অ্যাম্বুলেন্স ও জাতীয় হেল্পলাইনের দ্রুত যোগাযোগের নম্বর।</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <h3>স্বেচ্ছাসেবী নেটওয়ার্ক</h3>
+            <p>সংকটকালে স্থানীয় প্রস্তুত স্বেচ্ছাসেবীদের সহযোগিতা পাওয়ার সুযোগ।</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <h3>প্রোফাইল ও সেটিংস</h3>
+            <p>জরুরি যোগাযোগের ব্যক্তিদের তথ্য সংরক্ষণ এবং অবস্থানের গোপনীয়তা নিয়ন্ত্রণ।</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ৫. পরিচিতি (About RescueLink) ===== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <div class="section-head">
+            <h2 id="about-title" class="reveal">RescueLink সম্পর্কে</h2>
+            <p class="reveal">বাংলাদেশজুড়ে জরুরি সহায়তার একটি সংযুক্ত ডিজিটাল নেটওয়ার্ক।</p>
           </div>
+          <p class="about-lead reveal">দুর্যোগের সময় মানুষের পাশে দাঁড়াতে এবং দ্রুত জরুরি সহায়তা পৌঁছে দিতে RescueLink নাগরিক ও স্বেচ্ছাসেবকদের সংযুক্ত করে।</p>
+
+          <div class="about-stats reveal" data-about-stats>
+            <div class="about-stat">
+              <span class="stat-number" data-no-i18n-text data-target="64" data-suffix="">৬৪</span>
+              <span class="stat-label">জেলা</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-number" data-no-i18n-text data-target="10000" data-suffix="+">১০,০০০+</span>
+              <span class="stat-label">ব্যবহারকারী</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-number" data-no-i18n-text data-target="500" data-suffix="+">৫০০+</span>
+              <span class="stat-label">স্বেচ্ছাসেবক</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="about-map-stage">
+            <img src="assets/images/bangladesh.svg" alt="মানচিত্রে বাংলাদেশের প্রশাসনিক বিভাগ ও জেলাসমূহ" width="438" height="601" class="bd-map-graphic" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ৬. যোগাযোগ (Contact & Feedback) ===== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="contact-title" class="reveal">আপনার কথা আমাদের জানান</h2>
+          <p class="reveal">RescueLink নিয়ে প্রশ্ন, মতামত বা কোনো সমস্যা থাকলে লিখুন। আপনার বার্তা অ্যাপটিকে আরও ভালো করতে সাহায্য করবে।</p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- বাম পাশ: তথ্য -->
+          <div class="contact-info">
+            <article class="info-card reveal">
+              <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+              <div class="info-body">
+                <span class="contact-label">ইমেইল</span>
+                <a class="contact-value" id="contact-email-link" href="mailto:hello@rescuelink.example">hello@rescuelink.example</a>
+              </div>
+              <button type="button" class="copy-btn" id="copy-email" aria-label="ইমেইল ঠিকানা কপি করুন">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span id="copy-label" data-bn="কপি">কপি</span>
+              </button>
+            </article>
+
+            <article class="info-card reveal">
+              <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+              <div class="info-body">
+                <span class="contact-label">আপনি লিখতে পারেন</span>
+                <ul class="topic-list">
+                  <li>অ্যাপ সম্পর্কে প্রশ্ন</li>
+                  <li>মতামত ও পরামর্শ</li>
+                  <li>সমস্যা বা ত্রুটি জানানো</li>
+                  <li>সহযোগিতার প্রস্তাব</li>
+                </ul>
+              </div>
+            </article>
+
+            <aside class="emergency-card reveal" aria-label="জরুরি পরিস্থিতির সতর্কতা">
+              <span class="emergency-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+              <div>
+                <strong>এটি জরুরি সেবার লাইন নয়</strong>
+                <p data-i18n-html="emergency">বিপদে থাকলে এই ফর্মে লিখে অপেক্ষা করবেন না। সরাসরি জাতীয় জরুরি সেবা <a href="tel:999"><b>৯৯৯</b></a> নম্বরে কল করুন।</p>
+              </div>
+            </aside>
+          </div>
+
+          <!-- ডান পাশ: ফর্ম -->
+          <form class="contact-form reveal" id="contact-form" data-email="hello@rescuelink.example" novalidate>
+            <h3>আমাদের বার্তা পাঠান</h3>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="cf-name">আপনার নাম</label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="যেমন: রিয়া আহমেদ">
+                <span class="field-error" id="cf-name-err" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="cf-email">আপনার ইমেইল</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+                <span class="field-error" id="cf-email-err" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cf-topic">বিষয়</label>
+              <div class="select-wrap">
+                <select id="cf-topic" name="topic">
+                  <option value="প্রশ্ন">অ্যাপ সম্পর্কে প্রশ্ন</option>
+                  <option value="মতামত">মতামত ও পরামর্শ</option>
+                  <option value="সমস্যা">সমস্যা বা ত্রুটি জানানো</option>
+                  <option value="সহযোগিতা">সহযোগিতার প্রস্তাব</option>
+                </select>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cf-message">আপনার বার্তা</label>
+              <textarea id="cf-message" name="message" rows="5" required placeholder="এখানে লিখুন…"></textarea>
+              <span class="field-error" id="cf-message-err" role="alert"></span>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              বার্তা পাঠান
+            </button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
@@ -249,32 +376,56 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
+        <!-- ১. RescueLink (ব্র্যান্ডিং) -->
         <div>
           <a class="brand" href="#home" aria-label="RescueLink — হোমে যান">
             <img src="assets/images/logo.png" alt="" width="30" height="33" loading="lazy">
             <span>Rescue<b>Link</b></span>
           </a>
-          <p class="footer-text">জরুরি মুহূর্তে অবস্থান শেয়ার, কাছাকাছি নিরাপদ আশ্রয় ও জরুরি সেবার তথ্য — এক মোবাইল অ্যাপে।</p>
+          <p class="footer-text">জরুরি সহায়তা, কাছাকাছি নিরাপদ আশ্রয় এবং পাশে দাঁড়াতে প্রস্তুত মানুষের সঙ্গে যুক্ত হওয়ার বিশ্বস্ত প্ল্যাটফর্ম।</p>
         </div>
-        <nav aria-label="ফুটার মেনু">
+
+        <!-- ২. দ্রুত লিংক -->
+        <nav aria-label="দ্রুত লিংক মেনু">
           <h3>দ্রুত লিংক</h3>
           <ul>
-            <li><a href="#home">হোম</a></li>
-            <li><a href="#about">পরিচিতি</a></li>
+            <li><a href="#app-preview">অ্যাপের ঝলক</a></li>
+            <li><a href="#how-it-works">যেভাবে কাজ করে</a></li>
             <li><a href="#features">ফিচারসমূহ</a></li>
-            <li><a href="#how">যেভাবে কাজ করে</a></li>
+            <li><a href="#about">পরিচিতি</a></li>
             <li><a href="#contact">যোগাযোগ</a></li>
           </ul>
         </nav>
+
+        <!-- ৩. তথ্য (Information) -->
+        <nav aria-label="তথ্য মেনু">
+          <h3>তথ্য</h3>
+          <ul>
+            <li><a href="faqs.html">সাধারণ জিজ্ঞাসা</a></li>
+            <li><a href="privacy-policy.html">গোপনীয়তা নীতি</a></li>
+            <li><a href="terms-conditions.html">শর্তাবলী</a></li>
+          </ul>
+        </nav>
+
+        <!-- ৪. যোগাযোগ (Contact) -->
         <div>
           <h3>যোগাযোগ</h3>
           <ul>
-            <li><a href="mailto:jayedrjp@gmail.com">jayedrjp@gmail.com</a></li>
+            <li><a href="mailto:hello@rescuelink.example">hello@rescuelink.example</a></li>
+            <li><a href="tel:+8801XXXXXXXXX" class="footer-tel">+880 1XXX-XXXXXX</a></li>
           </ul>
+        </div>
+
+        <!-- ৫. অ্যাপ ডাউনলোড (Download App) -->
+        <div>
+          <h3>অ্যাপ ডাউনলোড</h3>
+          <div class="footer-badge-wrap">
+            <img src="assets/images/google-play-badge.png" alt="Google Play-তে RescueLink অ্যাপ পান" width="1024" height="341" loading="lazy" class="play-store-badge">
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="year">২০২৬</span> RescueLink। সর্বস্বত্ব সংরক্ষিত।</span>
+        <span>© <span id="year">2026</span> RescueLink. All rights reserved.</span>
         <span>RescueLink সরকারি জরুরি সেবার বিকল্প নয়।</span>
       </div>
     </div>

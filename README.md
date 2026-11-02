@@ -16,12 +16,12 @@ RescueLink/
 │   │   ├── logo-full.png     পূর্ণ লোগো (শেয়ার প্রিভিউয়ে ব্যবহৃত)
 │   │   ├── favicon.png       ফেভিকন
 │   │   ├── hero-app.png      হিরো সেকশনের ফোনের স্ক্রিন
-│   │   ├── app-home.png      হোম স্ক্রিন
-│   │   ├── app-sos.png       জরুরি SOS স্ক্রিন
-│   │   ├── app-map.png       মানচিত্র ও অবস্থান
-│   │   ├── app-shelters.png  কাছাকাছি আশ্রয়কেন্দ্র
-│   │   ├── app-services.png  জরুরি সেবার তথ্য
-│   │   └── app-profile.png   প্রোফাইল ও সেটিংস
+│   │   ├── app-home.jpeg     হোম স্ক্রিন
+│   │   ├── app-sos.jpeg      জরুরি SOS স্ক্রিন
+│   │   ├── app-map.jpeg      মানচিত্র ও অবস্থান
+│   │   ├── app-shelters.jpeg কাছাকাছি আশ্রয়কেন্দ্র
+│   │   ├── app-services.jpeg জরুরি সেবার তথ্য
+│   │   └── app-profile.jpeg  প্রোফাইল ও সেটিংস
 │   └── icons/                (ফাঁকা; আইকনগুলো index.html-এ ইনলাইন SVG হিসেবে আছে)
 └── README.md
 ```
